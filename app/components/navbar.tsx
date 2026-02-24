@@ -40,8 +40,10 @@ export default function Navbar() {
 
         {/* Right: Resume Button (Desktop) & Hamburger (Mobile) */}
         <div className="flex items-center gap-4 ml-auto">
-          <Button variant="outline" className="hidden md:inline-flex pr-4">
-            Resume
+          <Button variant="outline" className="hidden md:inline-flex pr-4" asChild>
+            <Link href="/Resume-CV.pdf" target="_blank" rel="noopener noreferrer">
+              Resume
+            </Link>
           </Button>
 
           {/* Mobile Hamburger */}
@@ -54,8 +56,10 @@ export default function Navbar() {
           </button>
 
           {/* Mobile Resume Button */}
-          <Button variant="outline" className="md:hidden pr-2">
-            Resume
+          <Button variant="outline" className="md:hidden pr-2" asChild>
+            <Link href="/Resume-CV.pdf" target="_blank" rel="noopener noreferrer">
+              Resume
+            </Link>
           </Button>
         </div>
       </div>
