@@ -53,7 +53,7 @@ export default function ContactForm() {
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label htmlFor="name" className="block text-sm font-medium mb-2">
-            Name
+            Your Name
           </label>
           <Input
             id="name"
@@ -66,7 +66,7 @@ export default function ContactForm() {
         </div>
         <div>
           <label htmlFor="email" className="block text-sm font-medium mb-2">
-            Email
+            Your Email
           </label>
           <Input
             id="email"

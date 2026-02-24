@@ -9,9 +9,14 @@ import type React from "react"; // Import React
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Henok Eshetu - Full Stack Developer",
+  title: "Henok Eshetu - Portfolio",
   description:
     "Backend-focused full stack developer specializing in scalable systems. Building elegant solutions with Java, Go, Python, and React.",
+  icons: {
+    icon: "/myprofile.png",
+    shortcut: "/myprofile.png",
+    apple: "/myprofile.png",
+  },
 };
 
 export default function RootLayout({

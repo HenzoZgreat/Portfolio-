@@ -12,7 +12,7 @@ export default function ProfileImage() {
 
   return (
     <div
-      className={`relative w-48 h-48 transition-all duration-1000 ease-out ${
+      className={`relative w-52 h-52 md:w-64 md:h-64 transition-all duration-1000 ease-out ${
         isLoaded ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
       }`}
     >
