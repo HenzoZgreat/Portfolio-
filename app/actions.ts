@@ -24,7 +24,7 @@ export async function submitContactForm(formData: FormData) {
       body: JSON.stringify({
         from: "onboarding@resend.dev",
         to: "henokeshe2@gmail.com",
-        subject: `New Portfolio Message from ${name}`,
+        subject: `Portfolio Message from ${name}`,
         html: `
           <h2>New Contact Form Submission</h2>
           <p><strong>From:</strong> ${name}</p>
