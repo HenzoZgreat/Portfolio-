@@ -29,7 +29,6 @@ const technologies = [
     skills: [
       { name: "Java", icon: Code },
       { name: "Spring Boot", icon: Package },
-      { name: "Go", icon: Zap },
       { name: "Python", icon: Code },
       { name: "FastAPI", icon: Zap },
     ],
@@ -48,7 +47,6 @@ const technologies = [
       { name: "Git", icon: GitBranch },
       { name: "GitHub", icon: Github },
       { name: "Docker", icon: Package },
-      { name: "Swagger", icon: BookOpen },
       { name: "Railway", icon: Cloud },
       { name: "Vercel", icon: Cloud },
       { name: "Linux", icon: Terminal },

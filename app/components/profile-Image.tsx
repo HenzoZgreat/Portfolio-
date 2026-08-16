@@ -12,7 +12,7 @@ export default function ProfileImage() {
 
   return (
     <div
-      className={`relative w-52 h-52 md:w-64 md:h-64 transition-all duration-1000 ease-out ${
+      className={`relative w-72 h-72 md:w-80 md:h-80 lg:w-[450px] lg:h-[800px] transition-all duration-1000 ease-out ${
         isLoaded ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
       }`}
     >
@@ -28,10 +28,10 @@ export default function ProfileImage() {
           }}
         >
           <Image
-            src="/myprofile.png"
+            src="/Me-FullBody.png"
             alt="Henok Eshetu"
             fill
-            className="object-cover"
+            className="object-cover object-top"
             priority
           />
         </div>

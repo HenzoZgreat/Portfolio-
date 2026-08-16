@@ -4,9 +4,50 @@ import Link from "next/link";
 import ContactForm from "./components/contact-form";
 import Navbar from "./components/navbar";
 import ProfileImage from "./components/profile-Image";
-import ProjectCard from "./components/project-card";
 import TechStack from "./components/tech-stack";
 import TypingAnimation from "./components/typing-animation";
+import FeaturedProjectCard from "./components/FeaturedProjectCard";
+import AboutMe from "./components/about-me";
+import CallMe from "./components/call-me";
+
+const projects = [
+  {
+    title: "Habesha Treasure",
+    description:
+      "Full-stack e-commerce platform for selling Ethiopian traditional products. Features admin panel, shopping cart, favorites, and Amharic language support with integrated payment methods.",
+    image: "/habeshaTreasure.PNG?height=400&width=600",
+    link: "https://github.com/HenzoZgreat/Habesha-Treasure-FullStack",
+    deployLink: "#",
+    tags: ["React", "Tailwind", "E-commerce"],
+  },
+  {
+    title: "DEUTSCHE MEDIZIN Backend",
+    description:
+      "Comprehensive student management system backend for a real college. Handles student registration, transcripts, assessment reports, and admin functionalities.",
+    image: "/DeutscheLandingPage.PNG?height=400&width=600",
+    link: "https://github.com/HenzoZgreat/DEUTSCHE_MEDIZIN-Collage-Backend",
+    deployLink: "#",
+    tags: ["Java", "Spring Boot", "Backend"],
+  },
+  {
+    title: "DEUTSCHE MEDIZIN Frontend",
+    description:
+      "Frontend for the student management system providing intuitive interface for student and admin operations.",
+    image: "/DeutscheLandingPage.PNG?height=400&width=600",
+    link: "https://github.com/surafelbit/DEUTSCHE_MEDIZIN-Collage-Frontend",
+    deployLink: "https://deutsche-medizin-collage-frontend-n.vercel.app/",
+    tags: ["React", "Vite", "Tailwind"],
+  },
+  {
+    title: "Matrix Calculator App",
+    description:
+      "A sophisticated matrix calculation application with intuitive UI for performing advanced matrix operations, easy manipulation and seamless copy-paste functionality.",
+    image: "/matrixCalculator.PNG?height=400&width=600",
+    link: "https://github.com/HenzoZgreat/Matrix-Calculator-App",
+    deployLink: "https://matrix-calculator-app-6u2u.vercel.app/",
+    tags: ["Next.js", "Tailwind", "ShadCn"],
+  },
+];
 
 export default function Page() {
   return (
@@ -14,6 +55,7 @@ export default function Page() {
       <Navbar />
 
       <main className="container px-4 md:px-6">
+        {/* Hero Section */}
         <section id="about" className="py-12 md:py-24 lg:py-32">
           <div className="flex justify-center">
             <div className="inline-flex flex-col items-center gap-10 md:flex-row md:items-center">
@@ -80,49 +122,29 @@ export default function Page() {
           </div>
         </section>
 
+        {/* New About Me Section */}
+        <AboutMe />
+
+        {/* Featured Projects Section */}
         <section id="projects" className="py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
               Projects
             </h2>
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              <ProjectCard
-                title="Habesha Treasure"
-                description="Full-stack e-commerce platform for selling Ethiopian traditional products. Features admin panel, shopping cart, favorites, and Amharic language support with integrated payment methods."
-                image="/habeshaTreasure.PNG?height=400&width=600"
-                link="https://github.com/HenzoZgreat/Habesha-Treasure-FullStack"
-                deployLink="#"
-                tags={["React", "Tailwind", "E-commerce"]}
-              />
-              <ProjectCard
-                title="DEUTSCHE MEDIZIN Backend"
-                description="Comprehensive student management system backend for a real college. Handles student registration, transcripts, assessment reports, and admin functionalities."
-                image="/DeutscheLandingPage.PNG?height=400&width=600"
-                link="https://github.com/HenzoZgreat/DEUTSCHE_MEDIZIN-Collage-Backend"
-                deployLink="#"
-                tags={["Java", "Spring Boot", "Backend"]}
-              />
-              <ProjectCard
-                title="DEUTSCHE MEDIZIN Frontend"
-                description="Frontend for the student management system providing intuitive interface for student and admin operations."
-                image="/DeutscheLandingPage.PNG?height=400&width=600"
-                link="https://github.com/surafelbit/DEUTSCHE_MEDIZIN-Collage-Frontend"
-                deployLink="https://deutsche-medizin-collage-frontend-n.vercel.app/"
-                tags={["React", "Vite", "Tailwind"]}
-              />
-              <ProjectCard
-                title="Matrix Calculator App"
-                description="A sophisticated matrix calculation application with intuitive UI for performing advanced matrix operations, easy manipulation and seamless copy-paste functionality."
-                image="/matrixCalculator.PNG?height=400&width=600"
-                link="https://github.com/HenzoZgreat/Matrix-Calculator-App"
-                deployLink="https://matrix-calculator-app-6u2u.vercel.app/"
-                tags={["Next.js", "Tailwind", "ShadCn"]}
-              />
+            <div className="space-y-12 md:space-y-20">
+              {projects.map((project, index) => (
+                <FeaturedProjectCard
+                  key={project.title}
+                  {...project}
+                  reversed={index % 2 !== 0}
+                />
+              ))}
             </div>
           </div>
         </section>
 
-        <section className="py-12 md:py-24 lg:py-32">
+        {/* Tech Stack Section */}
+        <section className="py-12 md:py-24 lg:py-24">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
               Tech Stack
@@ -131,6 +153,7 @@ export default function Page() {
           </div>
         </section>
 
+        {/* Contact Form Section */}
         <section id="contact" className="py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="mx-auto max-w-2xl">
@@ -141,6 +164,9 @@ export default function Page() {
             </div>
           </div>
         </section>
+
+        {/* Call Me / Direct Contact Section */}
+        <CallMe />
       </main>
 
       <footer className="border-t">
@@ -153,3 +179,4 @@ export default function Page() {
     </div>
   );
 }
+
