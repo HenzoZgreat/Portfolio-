@@ -74,7 +74,7 @@ export default function AboutMe() {
               </div>
               <h4 className="text-xl font-bold text-foreground">Backend & Architecture</h4>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Specialized in backend development with Java, Spring Boot, Python, and Go, coupled with modern React frontends for end-to-end full stack reliability.
+                Specialized in backend development with Java, Spring Boot, and Python, coupled with modern React frontends for end-to-end full stack reliability.
               </p>
             </div>
           </div>

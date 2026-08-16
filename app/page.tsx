@@ -71,7 +71,7 @@ export default function Page() {
                 </div>
                 <p className="text-gray-500 md:text-lg dark:text-gray-400 max-w-xl">
                   Backend-focused full stack developer specializing in scalable
-                  systems. Building elegant solutions with Java, Go, Python, and
+                  systems. Building elegant solutions with Java, Python, and
                   React.
                 </p>
                 <div className="flex flex-wrap gap-3 pt-4">
