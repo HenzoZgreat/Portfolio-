@@ -25,7 +25,7 @@ const projects = [
     description:
       "Comprehensive student management system backend for a real college. Handles student registration, transcripts, assessment reports, and admin functionalities.",
     image: "/DeutscheLandingPage.PNG?height=400&width=600",
-    link: "https://github.com/HenzoZgreat/DEUTSCHE_MEDIZIN-Collage-Backend",
+    link: "#",
     deployLink: "#",
     tags: ["Java", "Spring Boot", "Backend"],
   },
@@ -34,9 +34,36 @@ const projects = [
     description:
       "Frontend for the student management system providing intuitive interface for student and admin operations.",
     image: "/DeutscheLandingPage.PNG?height=400&width=600",
-    link: "https://github.com/surafelbit/DEUTSCHE_MEDIZIN-Collage-Frontend",
+    link: "#",
     deployLink: "https://deutsche-medizin-collage-frontend-n.vercel.app/",
     tags: ["React", "Vite", "Tailwind"],
+  },
+  {
+  title: "Workiye Baltena (ወርቅዬ ባልተና)",
+  description:
+    "A modern e-commerce platform designed to bring traditional Ethiopian baltena products to customers across Ethiopia, featuring product browsing, online ordering, Progressive Web Apps (PWA), and Telegram integration for product discovery and customer orders.",
+  image: "/workiye-baltena.png?height=400&width=600",
+  link: "#",
+  deployLink: "https://workeye-baltena.vercel.app/",
+  tags: ["Next.js", "Supabase", "Tailwind CSS", "PWA", "Telegram Integration"],
+},
+  {
+    title: "Adinas General Hospital",
+    description:
+      "A professional hospital website designed to establish a strong online presence, showcase healthcare services, and provide visitors with easy access to important hospital information.",
+    image: "/adinas.png?height=400&width=600",
+    link: "#",
+    deployLink: "https://afilass-general-pro-wg4z.vercel.app/",
+    tags: ["Next.js", "Node.js", "Tailwind CSS"],
+  },
+  {
+    title: "Genesis Agricultural Business",
+    description:
+      "A modern business website developed to showcase agricultural products and services, strengthen the company's digital presence, and provide customers with an accessible online experience.",
+    image: "/genesis.jpg?height=400&width=600",
+    link: "#",
+    deployLink: "https://genesis-mu-amber.vercel.app/",
+    tags: ["Next.js", "Tailwind CSS", "TypeScript"],
   },
   {
     title: "Matrix Calculator App",

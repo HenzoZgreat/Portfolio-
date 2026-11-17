@@ -41,7 +41,7 @@ export default function Navbar() {
         {/* Right: Resume Button (Desktop) & Hamburger (Mobile) */}
         <div className="flex items-center gap-4 ml-auto">
           <Button variant="outline" className="hidden md:inline-flex pr-4" asChild>
-            <Link href="/Resume-CV.pdf" target="_blank" rel="noopener noreferrer">
+            <Link href="/Henok_Eshetul_Professional_CV.pdf" target="_blank" rel="noopener noreferrer">
               Resume
             </Link>
           </Button>
